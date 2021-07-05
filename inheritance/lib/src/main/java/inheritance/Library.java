@@ -7,4 +7,50 @@ public class Library {
     public boolean someLibraryMethod() {
         return true;
     }
+
+    public static void main(String[] args) {
+
+        System.out.println("test");
+
+        Restaurant res = new Restaurant("Cube",5,7);
+        System.out.println(res);
+
+        Review review = new Review("nice place","Maryam",4);
+        Review review1 = new Review("love it","Mohammed",7);
+        Review review2 = new Review("bad ","Motasim",2);
+        res.addReview(review);
+        res.addReview(review1);
+        res.addReview(review2);
+        System.out.println(res.getReview());
+        System.out.println(res);
+
+        Shop shop = new Shop("TajMall","mall",10);
+        System.out.println(shop);
+
+        Review review3 = new Review("love it","Alaa",5);
+        Review review4 = new Review("not bad","Haneen",7);
+        Review review5 = new Review("nice mall","Ammara",2);
+        shop.addReview(review3);
+        shop.addReview(review4);
+        shop.addReview(review5);
+        System.out.println(shop.getReview());
+        System.out.println(shop);
+
+        Theater moviesMaryam = new Theater("Maryam");
+        moviesMaryam.addMovie("Me before u");
+        moviesMaryam.addMovie("Showshank");
+        moviesMaryam.addMovie("Green mile");
+        System.out.println(moviesMaryam.getMovies());
+        moviesMaryam.removeMovie("Showshank");
+        System.out.println(moviesMaryam.getMovies());
+//        moviesMaryam.addNewRev("nice movie","mariah",5);
+        Review review6 = new Review("nice movie", "mariah",5);
+        moviesMaryam.addNewRev(review6,"Me before u");
+        System.out.println(moviesMaryam.getReviews());
+        Review review7 = new Review("bad", "Ghalia",2);
+        moviesMaryam.addNewRev(review7,"Showshank");
+        System.out.println(moviesMaryam.getReviews());
+    }
+
+
 }

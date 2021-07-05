@@ -3,12 +3,63 @@
  */
 package inheritance;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class LibraryTest {
-    @Test public void someLibraryMethodReturnsTrue() {
+class LibraryTest {
+    @Test void someLibraryMethodReturnsTrue() {
         Library classUnderTest = new Library();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
+        assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
     }
+
+    @Test
+    public void constructorRestaurantTest(){
+    Restaurant test = new Restaurant("Cube",5,7);
+    String expectedName ="Cube";
+    assertEquals("Cube",test.getName());
+    assertEquals(5,test.getStars());
+    assertEquals(7,test.getPriceCategory());
+    }
+    @Test
+    public  void restaurantTest(){
+        Restaurant test = new Restaurant("Cube",5,7);
+        assertEquals("Restaurant{name='Cube', stars=5, priceCategory='7.0'}",String.valueOf(test));
+    }
+
+    @Test
+    public void constructorReviewTest(){
+        Review test = new Review("nice place","Maryam",4);
+        String expectedBody ="nice place";
+        String expectedAuthor ="Maryam";
+        assertEquals("nice place",test.getBody());
+        assertEquals("Maryam",test.getAuthor());
+        assertEquals(4,test.getNumberOfStars());
+    }
+//    Review{body='nice place', author='Maryam', numberOfStars=4}
+    @Test
+    public void reviewTest(){
+        Review test = new Review("nice place","Maryam",4);
+        assertEquals("Review{body='nice place', author='Maryam', numberOfStars=4}",String.valueOf(test));
+    }
+
+    @Test
+    public void constructorShopTest(){
+        Shop test = new Shop("TajMall","mall",10);
+        String expectedName ="TajMall";
+        String expectedDes ="mall";
+        assertEquals("TajMall",test.getName());
+        assertEquals("mall",test.getDescription());
+        assertEquals(10,test.getNumberOfDollarSigns());
+    }
+   @Test
+    public void shopTest(){
+        Shop test= new Shop("TajMall", "mall",10);
+        assertEquals("Shop{name='TajMall', description='mall', numberOfDollarSigns=10}",String.valueOf(test));
+   }
+   @Test
+    public void  toStringTheaterTest(){
+        Theater movies = new Theater("Maryam");
+       assertEquals("Theater{name='Maryam', movies[], reviews={}}",String.valueOf(movies));
+   }
+
 }
