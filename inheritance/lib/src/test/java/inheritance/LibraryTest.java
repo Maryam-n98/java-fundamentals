@@ -43,6 +43,16 @@ class LibraryTest {
     }
 
     @Test
+    public void addReviewResTest(){
+        Restaurant test = new Restaurant("Cube",4,4.5);
+        Review testrev = new Review("nice place","Maryam",4);
+                test.addReview(testrev);
+        assertTrue(test.getReview().size() == 1, "return true if add review ");
+
+
+    }
+
+    @Test
     public void constructorShopTest(){
         Shop test = new Shop("TajMall","mall",10);
         String expectedName ="TajMall";
@@ -61,5 +71,24 @@ class LibraryTest {
         Theater movies = new Theater("Maryam");
        assertEquals("Theater{name='Maryam', movies[], reviews={}}",String.valueOf(movies));
    }
-
+//addReviewTest
+   @Test
+    public void addReviewTest(){
+        Theater test = new Theater("mariah");
+        test.addNewRev("bad","mariah",5);
+        assertTrue(test.getReviews().size() == 1, "return true if add review ");
+   }
+   @Test
+    public void constructorTheaterTest(){
+       Theater test = new Theater("mariah");
+       assertEquals("mariah",test.getName());
+   }
+   @Test
+   public void addAndRemoveMoviesTest(){
+        Theater test =new Theater("malak");
+        test.addMovie("movieee");
+        assertTrue(test.getMovies().size() == 1,"return true if add movie");
+        test.removeMovie("movieee");
+        assertTrue(test.getMovies().size() == 0,"return true if removed movie");
+   }
 }

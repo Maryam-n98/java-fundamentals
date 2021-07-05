@@ -18,3 +18,4 @@ I  Wrote a method called roll that accepts an integer n and rolls a six-sided di
 then I wrote a method that accepts an array of integers and calculates and returns the average of all the values in the array.
 and i wrote a function an array of arrays calculate the average value for each array and return the array with the lowest average.
 
+
