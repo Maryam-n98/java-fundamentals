@@ -18,6 +18,25 @@ I  Wrote a method called roll that accepts an integer n and rolls a six-sided di
 then I wrote a method that accepts an array of integers and calculates and returns the average of all the values in the array.
 and i wrote a function an array of arrays calculate the average value for each array and return the array with the lowest average.
 
+# java-fundamentals
+
+## Lab 03:
+I used HashSet of type Integer to keep track of all the unique temperatures seen, between max and min.
+
+I wrote  tally function that accepts a List of Strings representing votes and returns one string to show what got the most votes.
+
+i Wrote a linterMassege method that read js file line by line.
+Don’t show an error if the line is empty.
+Don’t show an error if the line ends with an opening curly brace {
+Don’t show an error if the line ends with an closing curly brace }
+Don’t show an error if the line contains if or else
+
+and it used  gates.js  to show every line had missing semicolons 
+
+In the test, I test it in no errors file, one error file, few errors file, many errors file, and finally in an empty file.
+
+
+
 
 ### Lab 06:
 In  Restaurant Class I implements RestaurantsInterface

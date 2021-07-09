@@ -20,7 +20,6 @@ public class App {
         int errorLine = 0;
         int error = 0;
         String curr = "";
-
             while (scanner.hasNext()) {
                 curr = scanner.nextLine();
                 if(!curr.endsWith(";") && !curr.isEmpty() &&
@@ -36,15 +35,12 @@ public class App {
                 }else{
                     errorLine++;
                 }
-
             }
         return error;
     }
     public static void main(String[] args) throws IOException{
         Path path = Paths.get("C:\\Users\\Lenovo\\OneDrive\\Desktop\\java\\java-fundamentals\\linter\\app\\src\\main\\resources\\gates.js");
         new App().linterMessage(path.toString());
-//        System.out.println(linterMessage("C:\\Users\\Lenovo\\OneDrive\\Desktop\\java\\java-fundamentals\\linter\\app\\src\\main\\resources\\gates.js"));
-
     }
 
 }
