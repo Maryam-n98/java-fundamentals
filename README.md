@@ -34,3 +34,24 @@ I wrote a method addReview to Restaurant class.
 
  the addReview method updates the Restaurant star rating I mean the restaurant star rating will change.  
   Then i wrote a test for it.
+
+
+### Lab 07:
+I Created a Shop class it have a name, description, and number of dollar signs, and I implements ShopInterface.
+And I wrote a tests for the constructor shop and for add new Shop.
+
+As what we have in Lab 06 for Restaurant we have for shop you can add a Review for each shop you want and This method takes in a Review instance and associate that review with this Shop,  Then i wrote a test for it.
+
+
+ the addReview method updates the Shop star rating I mean the shop star rating will change.  
+  Then i wrote a test for it.
+
+I Created a Theater class have a name and all of the movies currently showing there, and I implements TheaterInterface.
+
+I wrote two method one addMovie it will allow you to add any movie you want, and then you have another method removeMovie its allow you to remove any movie you add
+and i wrote a tets for each method.
+
+And here As what we for Restaurant and shop we have for movie you can add a Review for each movie you want and This method takes in a Review instance and associate that review with this movie,  Then i wrote a test for it.
+
+And finally, someone reviewing a Restaurant or a Shop doesn’t have to include which movie they saw, it an optional.
+
