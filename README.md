@@ -19,3 +19,18 @@ then I wrote a method that accepts an array of integers and calculates and retur
 and i wrote a function an array of arrays calculate the average value for each array and return the array with the lowest average.
 
 
+### Lab 06:
+In  Restaurant Class I implements RestaurantsInterface
+have a name, a number of stars betweeen 0 and 5 using If statment, and a price category.
+And I wrote a tests for the constructor Restaurant and for add new Restaurant.
+ 
+In Review Class I implements ReviewInterface
+have a body, an author, and a number of stars.
+And I wrote a tests for the constructor  of Review and for add new Review.
+
+I wrote a method addReview to Restaurant class.
+ This method takes in a Review instance and associate that review with this Restaurant. 
+ Then i wrote a test for it.
+
+ the addReview method updates the Restaurant star rating I mean the restaurant star rating will change.  
+  Then i wrote a test for it.
